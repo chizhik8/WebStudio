@@ -137,6 +137,7 @@ img {
   }
   .header-menu.is-open {
     display: block;
+    z-index: 5;
   }
   .header-menu .header-menu-list {
     margin: 60px auto;
@@ -183,9 +184,9 @@ img {
     padding: 0px;
     margin: 0px auto;
     position: absolute;
-    bottom: -12px;
+    bottom: -14px;
     left: 0px;
-    width: 88px;
+    width: 99px;
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
