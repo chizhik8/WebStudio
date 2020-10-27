@@ -1,0 +1,78 @@
+/* ================Особенности===================== */
+
+.feature {
+  @media (min-width: $mobileS) and (max-width: 1199px) {
+    margin: 0px auto;
+    padding: 60px 0px;
+  }
+  @media (min-width: $desktop) {
+    padding: 94px 0px;
+  }
+
+  .feature-list {
+    @media (min-width: $mobileS) {
+      list-style: none;
+      padding: 0px;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @media (min-width: $tablet) {
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+  .item {
+    @media (min-width: $mobileS) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    @media (min-width: $tablet) {
+      width: 354px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 270px;
+    }
+    .icon-feature {
+      border: none;
+      padding: 0px;
+      margin: auto;
+      display: flex;
+      width: 100%;
+      height: 120px;
+      margin-bottom: 30px;
+    }
+
+    .icon-antenna-1,
+    .icon-clock-1,
+    .icon-diagram-1,
+    .icon-astronaut-1 {
+      padding: 0px;
+      margin: auto;
+    }
+  }
+  .title {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .text {
+    color: $second-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,84 @@
+/* ==============Постоянные клиенты================= */
+
+.clients {
+  background-color: $primary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* outline: 4px solid greenyellow; */
+  @media (min-width: $mobileS) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    /* outline: 4px solid orchid; */
+    @media (min-width: $mobileS) and (max-width: 1199px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+  }
+  .clients-list {
+    /* margin: 0px auto; */
+    margin: -15px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: 4px solid greenyellow; */
+    @media (min-width: $mobileS) and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
+  .item {
+    background-color: $primary-bg-color;
+    list-style: none;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: 4px solid orchid; */
+    margin: 15px;
+    transition-property: border;
+    transition-property: border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border: 1px solid $acent-logo-color;
+      border-radius: 4px;
+      .icon-logo-1,
+      .icon-logo-2,
+      .icon-logo-3,
+      .icon-logo-4,
+      .icon-logo-5,
+      .icon-logo-6 {
+        fill: $acent-logo-color;
+      }
+    }
+  }
+
+  .link {
+    fill: $second-text-color;
+    .icon-logo-1,
+    .item .icon-logo-2,
+    .icon-logo-3,
+    .icon-logo-4,
+    .icon-logo-5,
+    .icon-logo-6 {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

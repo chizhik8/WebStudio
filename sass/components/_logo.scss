@@ -1,0 +1,26 @@
+.logo {
+  color: $acent-logo-color;
+  font-family: $logo-text-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  /* outline: 2px solid orchid; */
+  margin: 24px auto 25px;
+}
+
+.logo-black {
+  @extend .logo;
+  color: $primary-text-color;
+}
+
+.logo-white {
+  @extend .logo;
+  color: $add-text-color;
+}
+
+.logo-f {
+  @extend .logo;
+  margin: 0px;
+  padding: 0px;
+}

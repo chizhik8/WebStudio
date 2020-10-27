@@ -1,0 +1,152 @@
+/*=====================Наша команда================= */
+.team {
+  background-color: $section-team-bg-color;
+  @media (min-width: $mobileS) and (max-width: 1199px) {
+    padding-top: 123px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    @media (min-width: $mobileS) and (max-width: 1199px) {
+      font-size: 28px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .team-list {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* outline: 2px solid orchid; */
+    @media (min-width: $mobileS) and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0px auto;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0px auto;
+    }
+  }
+
+  .item {
+    background-color: $primary-bg-color;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    /* outline: 2px solid orchid; */
+    @media (min-width: $mobileS) and (max-width: 767px) {
+      margin-top: 30px;
+      width: 420px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      justify-content: space-between;
+      align-items: baseline;
+      text-align: center;
+      width: 354px;
+      margin-top: 30px;
+    }
+
+    .team-photo {
+      @media (min-width: $mobileS) and (max-width: 479px) {
+        display: block;
+        width: 290px;
+        height: auto;
+      }
+      @media (min-width: $mobile) and (max-width: 767px) {
+        display: block;
+        width: 450px;
+        height: 460px;
+      }
+      @media (min-width: $tablet) and (max-width: 1199px) {
+        display: block;
+        width: 354px;
+        height: 374px;
+      }
+      @media (min-width: $desktop) {
+        display: block;
+        width: 270px;
+        height: 260px;
+      }
+    }
+
+    .title {
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.188;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding: 0px;
+      margin: 30px 0px 10px;
+    }
+
+    .text {
+      color: $second-text-color;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.188;
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding: 0px;
+      margin: 0px 0px 16px;
+    }
+
+    .social-icon {
+      /* outline: 2px solid orchid; */
+      padding: 0px;
+      margin: 0px auto;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 206px;
+    }
+
+    .link {
+      width: 44px;
+      height: 44px;
+      margin: 0px auto;
+      fill: $second-text-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      /* outline: 2px solid greenyellow; */
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: $acent-logo-color;
+        .icon-instagram-2,
+        .icon-facebook-1,
+        .icon-twitter-1,
+        .icon-linkedin-1 {
+          fill: $primary-bg-color;
+        }
+      }
+    }
+  }
+}

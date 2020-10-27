@@ -1,0 +1,273 @@
+/* ==============Footer!================= */
+.footer {
+  background-color: $hero-footer-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .footer-wraper {
+    display: flex;
+    @media (min-width: $mobileS) and (max-width: 767px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      text-align: center;
+      margin: auto;
+      padding: 0px 75px;
+      width: 100%;
+    }
+  }
+  .footer-wraper-left {
+    /* outline: 4px solid orchid; */
+    margin-right: 70px;
+    @media (min-width: $mobileS) and (max-width: 479px) {
+      align-self: baseline;
+      margin: 0px auto;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+    @media (min-width: $mobile) and (max-width: 767px) {
+      align-self: baseline;
+      margin-left: 124px;
+      text-align: center;
+    }
+  }
+  .footer-wraper-center {
+    padding: 0px;
+    margin: 12px auto 0px;
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+    width: 206px;
+    flex-wrap: wrap;
+    /* outline: 2px solid orchid; */
+    @media (min-width: $mobileS) and (max-width: 479px) {
+      margin: 0px auto;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    @media (min-width: $mobile) and (max-width: 767px) {
+      margin: 60px 137px;
+      justify-content: center;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      justify-content: center;
+    }
+  }
+  .footer-wraper-right {
+    padding: 0px;
+    margin: 12px auto 0px;
+    margin-left: 93px;
+    display: flex;
+    justify-content: right;
+    align-content: flex-start;
+    width: 570px;
+    height: 86px;
+    flex-wrap: wrap;
+    /* outline: 2px solid orchid; */
+    @media (min-width: $mobileS) and (max-width: 479px) {
+      margin: auto;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+    @media (min-width: $mobile) and (max-width: 767px) {
+      flex-direction: column;
+      margin: 0px;
+      width: 100%;
+      height: auto;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: baseline;
+      align-content: center;
+      margin: auto;
+      margin-top: 60px;
+    }
+    .title {
+      @media (min-width: $mobileS) and (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 20px;
+        margin-top: 0px;
+      }
+    }
+  }
+  .footer-form {
+    /* outline: 2px solid greenyellow; */
+    width: 570px;
+    padding: 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    @media (min-width: $mobileS) and (max-width: 767px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      justify-content: space-between;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+    }
+  }
+
+  .contacts-list {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    width: 231px;
+    /* outline: 2px solid orchid; */
+    .item {
+      list-style: none;
+      font-style: normal;
+      padding: 0px;
+      margin: 0px;
+      margin-bottom: 9px;
+    }
+    .link {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .contacts-list a {
+    color: $add-text-color;
+    list-style: none;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      color: $acent-logo-color;
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1429;
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $add-text-color;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    list-style: none;
+    padding: 0px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+    .link {
+      width: 44px;
+      height: 44px;
+      margin: 0px auto;
+      fill: $primary-bg-color;
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      /* outline: 2px solid orchid; */
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: $acent-logo-color;
+      }
+    }
+  }
+
+  .button-footer {
+    /* outline: 2px solid orchid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    background: $acent-logo-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $add-text-color;
+      background-color: $button-acent-bg-color;
+      font-family: $primary-text-font;
+    }
+    .img-iconsend {
+      margin-left: 10px;
+      padding: 0px;
+      /* outline: 2px solid orchid; */
+    }
+  }
+  .footer-input {
+    @media (min-width: $mobileS) and (max-width: 479px) {
+      margin: 0px auto;
+      margin-bottom: 20px;
+      width: 280px;
+    }
+    @media (min-width: $mobile) and (max-width: 1199px) {
+      margin-bottom: 20px;
+      width: 420px;
+    }
+    margin: 0px;
+    padding: 0px;
+    width: 358px;
+    height: 50px;
+    background-color: $hero-footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    padding-left: 16px;
+    &:focus,
+    &:hover,
+    &:active {
+      color: $add-text-color;
+    }
+  }
+  .footer-form-email input::placeholder {
+    /* padding: 15px 16px; */
+    font-family: $primary-text-font;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

@@ -1,0 +1,53 @@
+/* =========Чем мы занимаемся, наши работы========= */
+
+.portfolio {
+  padding-bottom: 94px;
+  /* outline: 4px solid greenyellow; */
+  @media (min-width: $mobileS) and (max-width: 1199px) {
+    display: none;
+  }
+
+  .portfolio-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* outline: 4px solid orchid; */
+
+    .item {
+      /* outline: 4px solid orchid; */
+      position: relative;
+    }
+
+    .text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.1429;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $add-text-color;
+      background-color: rgba(47, 48, 58, 0.8);
+      /* outline: 4px solid greenyellow; */
+      width: 370px;
+      height: 70px;
+      padding: 27px 0px;
+      margin: 0px auto;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 48.7px;
+  }
+}

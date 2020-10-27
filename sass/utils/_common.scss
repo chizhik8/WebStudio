@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  body {
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+    font-family: $primary-text-font;
+    .container {
+      margin: 0px auto;
+      padding: 0px 15px;
+      @media (min-width: $mobileS) and (max-width: 479px) {
+        max-width: $mobileS;
+      }
+      @media (min-width: $mobile) and (max-width: 767px) {
+        max-width: $mobile;
+      }
+      @media (min-width: $tablet) and (max-width: 1199px) {
+        max-width: $tablet;
+      }
+      @media (min-width: $desktop) {
+        max-width: $desktop;
+      }
+    }
+    .main-page {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: $tablet) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
